@@ -2,7 +2,7 @@
 
 import Loading from "@/components/Loading";
 
-const index = () => {
+const Main = () => {
   return (
     <div>
       <Loading />
@@ -10,4 +10,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Main;

@@ -1,10 +1,9 @@
 import Analytics from "@/components/analytics";
-import NivoLineChart from "@/components/charts/LineChart";
 import Loans from "@/components/loans";
 import RecentTransactions from "@/components/recent-transactions";
 import React from "react";
 
-const page = () => {
+const Dashboard = () => {
   return (
     <div className="grid grid-cols-7">
       <div className="col-span-5">
@@ -21,4 +20,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Dashboard;

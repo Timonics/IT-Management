@@ -3,7 +3,7 @@
 import { navItems } from "@/constants/navItems";
 import useStateStore from "@/stores/statesStore";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { TbMenu3, TbX } from "react-icons/tb";
 
 const Nav = () => {

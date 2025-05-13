@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import React from "react";
 import ThemeToggle from "../themeToggle";
-import { TbNotification, TbSearch, TbSettings, TbUser } from "react-icons/tb";
+import { TbNotification, TbSettings, TbUser } from "react-icons/tb";
 import { GrSearch } from "react-icons/gr";
 
 const Header = () => {

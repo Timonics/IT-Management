@@ -2,8 +2,8 @@ import { recentTransactions } from "@/dummyData/recenttransactions";
 import React from "react";
 
 const RecentTransactions = () => {
-  const recenttransactionsElements = recentTransactions.map((items) => (
-    <div className="grid grid-cols-5 urban text-sm">
+  const recenttransactionsElements = recentTransactions.map((items, index) => (
+    <div key={index} className="grid grid-cols-5 urban text-sm">
       <p>{items.transactionID}</p>
       <p>{items.type}</p>
       <p>{items.amount}</p>

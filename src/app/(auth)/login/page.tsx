@@ -3,7 +3,7 @@
 import useAuthStore from "@/stores/authStore";
 import React from "react";
 
-const index = () => {
+const Login = () => {
   const { setIsAuthenticated } = useAuthStore();
 
   return (
@@ -46,7 +46,7 @@ const index = () => {
           </button>
         </div>
         <p className="text-center mt-4 opensans text-xs">
-          Don't have an account?{" "}
+          Don't have an account?
           <span className="font-medium urban underline underline-offset-2 text-base cursor-pointer">
             Sign Up
           </span>
@@ -56,4 +56,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Login;

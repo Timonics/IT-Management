@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ProtectedRoutes from "@/components/protectedRoutes";
-import ThemeToggle from "@/components/themeToggle";
 
 import { Urbanist, Open_Sans } from "next/font/google";
 

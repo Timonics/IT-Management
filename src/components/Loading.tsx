@@ -8,7 +8,7 @@ const Loading = () => {
   const router = useRouter();
   useEffect(() => {
     return router.replace('/dashboard')
-  }, []);
+  }, [router]);
 
   return (
     <div className="absolute inset-0 backdrop-blur-lg flex items-center justify-center">

@@ -10,16 +10,12 @@ const ProtectedRoutes = ({ children }: { children: React.ReactNode }) => {
   const pathName = usePathname();
   const router = useRouter();
   
-  console.log(pathName);
-
   const authRoutes = ["/login"];
   const protectedRoutes = ["/", "/dashboard"];
 
   useEffect(() => {
     const isPublic = authRoutes.includes(pathName);
     const isProtected = protectedRoutes.includes(pathName);
-
-    console.log(isPublic && isAuthenticated);
 
     if (isPublic && isAuthenticated) {
       router.replace("/");
