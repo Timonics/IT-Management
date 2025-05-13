@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #dbd8d8;  
+  --foreground: #0a0a0a;
+}
+
+html.light {
+  --background: linear-gradient(115deg,  #dad7d7 , #dad7d7, #f8d752c9);
+  --foreground: #0a0a0a;
+}
+
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #fff;
+}
+
+body {
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.urban {
+  font-family: var(--font-urbanist);
+}
+
+.opensans {
+  font-family: var(--font-opensans);
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  display: none;
+}
