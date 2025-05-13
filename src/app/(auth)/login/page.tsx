@@ -45,12 +45,7 @@ const Login = () => {
             Google
           </button>
         </div>
-        <p className="text-center mt-4 opensans text-xs">
-          Don't have an account?
-          <span className="font-medium urban underline underline-offset-2 text-base cursor-pointer">
-            Sign Up
-          </span>
-        </p>
+        <p className="text-center mt-4 opensans text-xs">Don't have an account?<span className="font-medium urban underline underline-offset-2 text-base cursor-pointer">Sign Up</span></p>
       </div>
     </section>
   );
