@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ProtectedRoutes from "@/components/protectedRoutes";
 
-import { Urbanist, Open_Sans } from "next/font/google";
 import { urbanist, opensans, outfit } from "@/fonts";
 
 export const metadata: Metadata = {

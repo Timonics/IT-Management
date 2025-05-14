@@ -10,23 +10,12 @@ import {
   TbChartPie,
 } from "react-icons/tb";
 import {
-  MdArchive,
-  MdGroups,
-  MdPayments,
-  MdSavings,
   MdOutlineAttachMoney,
   MdOutlineInventory,
   MdSupportAgent,
-  MdEmail,
   MdOutlinePayments,
   MdOutlineSavings,
-  MdOutlineEmail,
 } from "react-icons/md";
-import {
-  FaMoneyBillWave,
-  FaFileInvoiceDollar,
-  FaChartPie,
-} from "react-icons/fa";
 import { AiOutlineAudit } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
 import { LiaMoneyBillWaveSolid } from "react-icons/lia";
