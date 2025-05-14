@@ -8,10 +8,10 @@ const Statistics = () => {
       className="border p-2 px-4 rounded-full border-black/20 flex items-center justify-between"
     >
       <div className="flex flex-col gap-1">
-        <h3 className="urban text-sm">{data.name}</h3>
-        <p className="text-xs opensans">{data.amount}</p>
+        <h3 className="urban text-sm font-medium">{data.name}</h3>
+        <p className="text-xs urban">{data.amount}</p>
       </div>
-      <p className="outfit">{data.changes}</p>
+      <p className="outfit ">{data.changes}</p>
     </div>
   ));
   return (

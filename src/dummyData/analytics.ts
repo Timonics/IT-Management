@@ -1,42 +1,47 @@
+import { FaMoneyBillWave, FaUserCheck, FaUserTimes } from "react-icons/fa";
+import { LiaMoneyBillWaveSolid } from "react-icons/lia";
+import { MdOutlinePayments, MdOutlineSavings } from "react-icons/md";
+import { TbArchive, TbCoins } from "react-icons/tb";
+
 export const analytics = [
   {
     name: "Active Co-operators",
-    icon: "",
+    icon: FaUserCheck,
     amount: 12000000,
   },
   {
     name: "Inactive Co-operators",
-    icon: "",
+    icon: FaUserTimes,
     amount: 24,
   },
   {
     name: "Total Loans",
-    icon: "",
+    icon: LiaMoneyBillWaveSolid,
     amount: 621,
   },
   {
     name: "Total Collection",
-    icon: "",
+    icon: TbArchive,
     amount: 1029,
   },
   {
     name: "Total Repayments",
-    icon: "",
+    icon: MdOutlinePayments,
     amount: 690,
   },
   {
     name: "Total Debts",
-    icon: "",
+    icon: FaMoneyBillWave,
     amount: 11,
   },
   {
     name: "Total Dividends",
-    icon: "",
+    icon: MdOutlineSavings,
     amount: 84,
   },
   {
     name: "Total Shares",
-    icon: "",
+    icon: TbCoins,
     amount: 312,
   },
 ];
