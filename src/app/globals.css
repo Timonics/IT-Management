@@ -1,12 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #dbd8d8;  
+  --background: linear-gradient(
+    to bottom right in oklab,
+    #dad7d7,
+    #f3e7b9c9,
+    #f8d752c9
+  );
   --foreground: #0a0a0a;
 }
 
 html.light {
-  --background: linear-gradient(115deg,  #dad7d7 , #dad7d7, #f8d752c9);
+  --background: linear-gradient(
+    to bottom right in oklab,
+    #dad7d7,
+    #f3e7b9c9,
+    #f8d752c9
+  );
   --foreground: #0a0a0a;
 }
 
@@ -16,16 +26,21 @@ html.dark {
 }
 
 body {
+  background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .urban {
-  font-family: var(--font-urbanist);
+  font-family: var(--font-urban);
 }
 
 .opensans {
   font-family: var(--font-opensans);
+}
+
+.outfit {
+  font-family: var(--font-outfit);
 }
 
 .no-scroll::-webkit-scrollbar {

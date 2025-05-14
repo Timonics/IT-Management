@@ -29,7 +29,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={handleToggle}
-      className="cursor-pointer p-3 rounded-full bg-[#f1f1f1]"
+      className="cursor-pointer p-3 rounded-full bg-[#fff]/70"
     >
       {theme === "dark" ? <TbSun size={15} /> : <TbMoon size={15}/>}
     </button>

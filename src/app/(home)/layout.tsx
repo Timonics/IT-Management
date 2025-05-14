@@ -2,20 +2,17 @@
 
 import Header from "@/components/header";
 import Nav from "@/components/nav";
-import useStateStore from "@/stores/statesStore";
 import React, { ReactNode } from "react";
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
-  const { showNav } = useStateStore();
-
   return (
-    <div className="flex h-screen">
-      <div className={`p-4 ${showNav && "flex-1"}`}>
+    <div className="flex gap-4 h-screen">
+      <div className={`py-1 absolute top-0 bottom-0`}>
         <Nav />
       </div>
-      <div className="flex-6 py-4">
+      <div className="flex-6 py-4 ml-17">
         <Header />
-        <div className="h-[calc(100vh-120px)] overflow-auto scrollbar no-scroll mr-2 rounded-3wxl">
+        <div className="h-[calc(100vh-110px)] overflow-auto scrollbar no-scroll mr-2 rounded-3xl">
           {children}
         </div>
       </div>

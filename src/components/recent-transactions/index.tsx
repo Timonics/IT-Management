@@ -3,26 +3,26 @@ import React from "react";
 
 const RecentTransactions = () => {
   const recenttransactionsElements = recentTransactions.map((items, index) => (
-    <div key={index} className="grid grid-cols-5 urban text-sm">
-      <p>{items.transactionID}</p>
-      <p>{items.type}</p>
-      <p>{items.amount}</p>
-      <p>{items.date}</p>
-      <p>{items.status}</p>
+    <div key={index} className="grid grid-cols-5 text-xs">
+      <p className="p-2">{items.transactionID}</p>
+      <p className="p-2">{items.type}</p>
+      <p className="p-2">{items.amount}</p>
+      <p className="p-2">{items.date}</p>
+      <p className="p-2">{items.status}</p>
     </div>
   ));
   return (
-    <div className="p-4 flex flex-col gap-4 bg-[#f1f1f1] rounded-3xl shadow-md">
-      <h2 className="urban text-2xl">RecentTransactions</h2>
-      <div className="space-y-2">
-        <div className="grid grid-cols-5 urban">
-          <p>Transaction ID</p>
-          <p>Type</p>
-          <p>Amount</p>
-          <p>Date</p>
-          <p>Status</p>
+    <div className="p-4 flex flex-col justify-center gap-4 rounded-3xl h-full">
+      <h2 className="urban text-2xl">Recent Transactions</h2>
+      <div className="border rounded-xl">
+        <div className="grid grid-cols-5 outfit font-bold">
+          <p className="p-2">Transaction ID</p>
+          <p className="p-2">Type</p>
+          <p className="p-2">Amount</p>
+          <p className="p-2">Date</p>
+          <p className="p-2">Status</p>
         </div>
-        <div className="space-y-4">{recenttransactionsElements}</div>
+        <div className="space-y-">{recenttransactionsElements}</div>
       </div>
     </div>
   );

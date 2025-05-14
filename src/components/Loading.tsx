@@ -11,7 +11,7 @@ const Loading = () => {
   }, [router]);
 
   return (
-    <div className="absolute inset-0 backdrop-blur-lg flex items-center justify-center">
+    <div className="absolute inset-0 flex items-center justify-center">
       <FaSpinner className="animate-spin text-3xl" />
     </div>
   );

@@ -22,18 +22,18 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between p-4 mb-2">
       <h2 className="urban text-5xl">{newHeaderName}</h2>
-      <div className="flex items-center gap-2">
-        <div className="flex items-center p-2 rounded-full bg-[#f1f1f1] urban">
+      <div className="flex items-center gap-1">
+        <div className="flex items-center p-2 rounded-full bg-[#fff]/70 urban">
           <input className="outline-none px-2 w-[300px]" placeholder="Search"/>
           <GrSearch size={15}/>
         </div>
-        <div className="flex items-center p-3 bg-[#f1f1f1] rounded-full text-xs urban gap-2">
-          <TbSettings size={15} /> Settings
+        <div className="flex items-center bg-black/80 font-semibold text-white/70 p-3 rounded-full text-xs urban gap-2">
+          <TbSettings size={15} color="" /> Settings
         </div>
-        <div className="p-3 rounded-full bg-[#f1f1f1]">
+        <div className="p-3 rounded-full bg-[#fff]/70">
           <TbNotification size={15} />
         </div>
-        <div className="p-3 rounded-full bg-[#f1f1f1]">
+        <div className="p-3 rounded-full bg-[#fff]/70">
           <TbUser size={15} />
         </div>
         <ThemeToggle />

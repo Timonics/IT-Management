@@ -23,3 +23,15 @@ export const opensans = localFont({
   variable: "--font-opensans",
   display: "swap",
 });
+
+export const outfit = localFont({
+  src: [
+    {
+      path: "../public/fonts/Outfit.ttf",
+      weight: "100 900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-outfit",
+  display: "swap",
+});

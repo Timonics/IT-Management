@@ -4,7 +4,7 @@ import Loading from "@/components/Loading";
 
 const Main = () => {
   return (
-    <div>
+    <div className="h-screen">
       <Loading />
     </div>
   );
