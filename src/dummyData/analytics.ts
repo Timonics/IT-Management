@@ -1,7 +1,6 @@
-import { FaMoneyBillWave, FaUserCheck, FaUserTimes } from "react-icons/fa";
-import { LiaMoneyBillWaveSolid } from "react-icons/lia";
+import { FaMoneyBillWave } from "react-icons/fa";
 import { MdOutlinePayments, MdOutlineSavings } from "react-icons/md";
-import { TbArchive, TbCoins } from "react-icons/tb";
+import { TbCoins } from "react-icons/tb";
 
 export const analytics = [
   {

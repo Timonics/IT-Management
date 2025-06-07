@@ -1,11 +1,8 @@
 import {
   TbFileAnalytics,
   TbBuildingBank,
-  TbReportAnalytics,
   TbCoins,
-  TbArrowsExchange,
   TbLayoutDashboard,
-  TbArchive,
   TbFileInvoice,
   TbChartPie,
 } from "react-icons/tb";
@@ -98,49 +95,49 @@ export const secondaryNavItems = [
     link: "/commodity",
     icon: MdOutlineInventory,
   },
-  // {
-  //   name: "Mortgage",
-  //   link: "/mortgage",
-  //   icon: TbBuildingBank,
-  // },
-  // {
-  //   name: "Income",
-  //   link: "/income",
-  //   icon: MdOutlineAttachMoney,
-  // },
-  // {
-  //   name: "Expenses",
-  //   link: "/expenses",
-  //   icon: TbFileInvoice,
-  // },
-  // {
-  //   name: "Assets",
-  //   link: "/assests",
-  //   icon: TbFileAnalytics,
-  // },
-  // {
-  //   name: "Accounting",
-  //   link: "/accounting",
-  //   icon: TbChartPie,
-  // },
-  // {
-  //   name: "SMS",
-  //   link: "/sms",
-  //   icon: HiOutlineMail,
-  // },
-  // {
-  //   name: "Group Email",
-  //   link: "/group-email",
-  //   icon: HiOutlineMail,
-  // },
-  // {
-  //   name: "Support",
-  //   link: "/support",
-  //   icon: MdSupportAgent,
-  // },
-  // {
-  //   name: "Audit Log",
-  //   link: "/audit-log",
-  //   icon: AiOutlineAudit,
-  // },
+  {
+    name: "Mortgage",
+    link: "/mortgage",
+    icon: TbBuildingBank,
+  },
+  {
+    name: "Income",
+    link: "/income",
+    icon: MdOutlineAttachMoney,
+  },
+  {
+    name: "Expenses",
+    link: "/expenses",
+    icon: TbFileInvoice,
+  },
+  {
+    name: "Assets",
+    link: "/assests",
+    icon: TbFileAnalytics,
+  },
+  {
+    name: "Accounting",
+    link: "/accounting",
+    icon: TbChartPie,
+  },
+  {
+    name: "SMS",
+    link: "/sms",
+    icon: HiOutlineMail,
+  },
+  {
+    name: "Group Email",
+    link: "/group-email",
+    icon: HiOutlineMail,
+  },
+  {
+    name: "Support",
+    link: "/support",
+    icon: MdSupportAgent,
+  },
+  {
+    name: "Audit Log",
+    link: "/audit-log",
+    icon: AiOutlineAudit,
+  },
 ];
