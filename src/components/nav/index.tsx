@@ -15,6 +15,7 @@ import { useRouter } from "next/navigation";
 
 const Nav = () => {
   const router = useRouter();
+  const [navIsSelected, setNavIsSelected] = useState<boolean>(false);
   const [selectedNavName, setSelectedNavName] = useState<string>("");
 
   const primaryNavElements = primaryNavItems.map((item) => {
@@ -35,7 +36,6 @@ const Nav = () => {
   const secondaryNavElements = secondaryNavItems.map((item) => {
     const Icon = item.icon;
     const hasSubLinks: boolean = item.sub_members ? true : false;
-    const [navIsSelected, setNavIsSelected] = useState<boolean>(false);
 
     const subElements = item.sub_members?.map((item, index) => (
       <Link
