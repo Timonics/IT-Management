@@ -11,11 +11,8 @@ const Header = () => {
   const pathArr = pathName.split("/");
   const headerName = pathArr[1];
 
-  
   const headerNameArr = headerName.includes("_") ? headerName.replace("_", " ").split("") : headerName.split("");
   
-  console.log(headerNameArr);
-
   const headerNametoFirstCaps = headerNameArr[0].toUpperCase();
   headerNameArr.shift();
 

@@ -12,10 +12,10 @@ const RecentTransactions = () => {
     </div>
   ));
   return (
-    <div className="p-4 flex flex-col justify-center gap-4 rounded-3xl h-full">
+    <div className="p-4 flex flex-col justify-center gap-4 rounded-3xl h-full bg-white/70">
       <h2 className="urban text-3xl">Recent Transactions</h2>
-      <div className="border rounded-xl">
-        <div className="grid grid-cols-5 outfit font-bold p-2">
+      <div className="bg-gray-200 rounded-xl">
+        <div className="grid grid-cols-5 outfit font-bold p-2 rounded-t-xl bg-gray-300">
           <p className="p-2">Transaction ID</p>
           <p className="p-2">Type</p>
           <p className="p-2">Amount</p>

@@ -24,11 +24,12 @@ const Nav = () => {
       <Link
         key={item.name}
         href={item.link}
-        className={`flex justify-center hover:bg-gray-200 py-2 rounded-md items-center gap-1 urban cursor-pointer`}
+        className={`flex flex-col justify-center hover:bg-gray-200 py-2 rounded-md items-center gap-1 urban cursor-pointer`}
       >
         <div className="size-[40px] flex items-center justify-center rounded-full bg-black text-[#81e0fbc9]">
           <Icon />
         </div>
+        <p className="text-black text-xs font-bold">Dashboard</p>
       </Link>
     );
   });
