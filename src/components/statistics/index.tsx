@@ -1,7 +1,7 @@
 import { statisticsData } from "@/dummyData/statisticsData";
 import React from "react";
 
-const Statistics = () => {
+const ExpenseOverview = () => {
   const statisticsDataElements = statisticsData.map((data) => (
     <div
       key={data.name}
@@ -15,17 +15,17 @@ const Statistics = () => {
     </div>
   ));
   return (
-    <div className="h-full flex gap-1">
-      <div className="flex flex-col w-1/2 p-2">
+    <div className="h-full flex gap-2">
+      <div className="flex flex-col w-1/3 p-2">
         <h2 className="urban text-3xl mt-2 underline underline-offset-4">
-          Statistics
+          Expense Overview
         </h2>
-        <div className="mt-4 h-[248px] flex flex-col gap-4 overflow-auto no-scroll">
+        <div className="mt-4 h-[248px] flex flex-col gap-4 overflow-auto border-2 rounded-lg border-gray-400 p-2 scrollbar">
           {statisticsDataElements}
         </div>
       </div>
-      <div className="w-1/2 py-2">
-        <div className="h-full rounded-3xl bg-gray-300 flex items-center justify-center urban">
+      <div className="w-2/3 py-2">
+        <div className="h-full shadow-2xl shadow-gray-900/25 rounded-3xl bg-gray-100 flex items-center justify-center urban">
           Statistics Chart comes here
         </div>
       </div>
@@ -33,4 +33,4 @@ const Statistics = () => {
   );
 };
 
-export default Statistics;
+export default ExpenseOverview;

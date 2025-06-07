@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
-import { TbLetterJ } from "react-icons/tb";
+import logo from "@/assets/image.png";
 
 const Logo = () => {
   return (
-    <div className="p-2 text-yellow-500 bg-black absolute top-4 left-4 size-[35px] items-center justify-center flex rounded-full border-2 border-yellow-500 font-bold text-2xl">
-      <TbLetterJ />
+    <div className="w-fit overflow-hidden rounded-lg bg-white shadow-md">
+      <Image src={logo} alt="logo" height={80}/>
     </div>
   );
 };

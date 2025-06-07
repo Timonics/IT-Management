@@ -10,7 +10,7 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
       <div className={`py-1 absolute top-0 bottom-0`}>
         <Nav />
       </div>
-      <div className="flex-6 py-4 ml-17">
+      <div className="flex-6 py-4 ml-24">
         <Header />
         <div className="h-[calc(100vh-110px)] overflow-auto scrollbar no-scroll mr-2 rounded-3xl">
           {children}

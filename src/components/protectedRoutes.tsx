@@ -10,7 +10,7 @@ const ProtectedRoutes = ({ children }: { children: React.ReactNode }) => {
   const pathName = usePathname();
   const router = useRouter();
   
-  const authRoutes = ["/login"];
+  const authRoutes = ["/login", "/signup"];
   const protectedRoutes = ["/", "/dashboard"];
 
   useEffect(() => {

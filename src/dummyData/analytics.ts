@@ -5,43 +5,31 @@ import { TbArchive, TbCoins } from "react-icons/tb";
 
 export const analytics = [
   {
-    name: "Active Co-operators",
-    icon: FaUserCheck,
-    amount: 12000000,
-  },
-  {
-    name: "Inactive Co-operators",
-    icon: FaUserTimes,
-    amount: 24,
-  },
-  {
-    name: "Total Loans",
-    icon: LiaMoneyBillWaveSolid,
-    amount: 621,
-  },
-  {
-    name: "Total Collection",
-    icon: TbArchive,
-    amount: 1029,
-  },
-  {
-    name: "Total Repayments",
+    name: "Total Members",
     icon: MdOutlinePayments,
     amount: 690,
+    color: "#4f46e5",
+    end_color: "#60a5fa",
   },
   {
-    name: "Total Debts",
+    name: "Pending Members",
     icon: FaMoneyBillWave,
     amount: 11,
+    color: "#34d399",
+    end_color: "#6ee7b7",
   },
   {
-    name: "Total Dividends",
+    name: "Deposit Requests",
     icon: MdOutlineSavings,
     amount: 84,
+    color: "#facc15",
+    end_color: "#fcd34d",
   },
   {
-    name: "Total Shares",
+    name: "Pending Deposits",
     icon: TbCoins,
     amount: 312,
+    color: "#ec4899",
+    end_color: "#fca5a5",
   },
 ];

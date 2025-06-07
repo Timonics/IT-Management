@@ -1,6 +1,7 @@
 "use client";
 
 import useAuthStore from "@/stores/authStore";
+import Link from "next/link";
 import React from "react";
 
 const Login = () => {
@@ -18,7 +19,7 @@ const Login = () => {
         <div className="space-y-1">
           <p className="text-xs ml-3 opensans font-medium">Email</p>
           <input
-            className="border border-[#888884] outline-none urban p-2 rounded-full w-full text-xs pl-4"
+            className="border border-[#888884] urban p-2 rounded-lg w-full text-xs pl-4"
             type="email"
             placeholder="Email Address"
           />
@@ -26,30 +27,30 @@ const Login = () => {
         <div className="space-y-1">
           <p className="text-xs ml-3 opensans font-medium">Password</p>
           <input
-            className="border active:border-[#f8d752c9] outline-none border-[#888884] urban p-2 rounded-full w-full text-xs pl-4"
+            className="border active:border-[#f8d752c9] outline-none border-[#888884] urban p-2 rounded-lg w-full text-xs pl-4"
             type="password"
             placeholder="Password"
           />
         </div>
         <button
-          className="urban w-full p-3 rounded-full mt-4 bg-black text-white hover:bg-[#f8d752c9] hover:text-black transition-all ease-in-out text-sm cursor-pointer"
+          className="urban w-full p-3 rounded-lg mt-4 bg-black text-white hover:bg-[#97cff5c9] hover:text-black hover:font-bold transition-all ease-in-out text-sm cursor-pointer"
           onClick={() => setIsAuthenticated(true)}
         >
           Sign in
         </button>
       </div>
       <div className="text-sm">
-        <p className="text-center text-xs my-2 urban italic">Or sign in with</p>
+        {/* <p className="text-center text-xs my-2 urban italic">Or sign in with</p>
         <div className="flex">
           <button className="bg-white w-full p-3 rounded-xl urban font-bold text-[16px]">
             Google
           </button>
-        </div>
+        </div> */}
         <p className="text-center mt-4 opensans text-xs">
           {`Don't`} have an account?{" "}
-          <span className="font-medium urban underline underline-offset-2 text-base cursor-pointer">
+          <Link href={"signup"} className="font-medium urban underline underline-offset-2 text-base cursor-pointer">
             Sign Up
-          </span>
+          </Link>
         </p>
       </div>
     </section>
