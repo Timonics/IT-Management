@@ -92,8 +92,8 @@ const Nav = () => {
   });
 
   return (
-    <div className="h-full w-[85px] hover:shadow-2xl hover:w-[350px] transition-all ease-in-out delay-100 p-1.5 pt-2 backdrop-blur-md flex rounded-r-xl bg-[#fff]/70 shadow-md items-center gap-4 overflow-hidden dark:bg-white/20 z-50 max-md:fixed top-0 left-0 max-md:w-64">
-      <div className="flex flex-col items-center max-md:hidden border-black justify-center h-full">
+    <div className="h-full w-[85px] hover:shadow-2xl hover:w-[350px] transition-all ease-in-out delay-100 p-1.5 pt-2 backdrop-blur-md flex rounded-r-xl bg-[#fff]/70 shadow-md items-center gap-4 overflow-hidden dark:bg-white/20 z-50 max-lg:fixed top-0 left-0 max-lg:w-64">
+      <div className="flex flex-col items-center max-lg:hidden border-black justify-center h-full">
         <div className="w-[70px] rounded-lg overflow-hidden italic border text-center p-2 urban">
           Logo
         </div>
