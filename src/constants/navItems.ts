@@ -1,22 +1,7 @@
-import {
-  TbFileAnalytics,
-  TbBuildingBank,
-  TbCoins,
-  TbLayoutDashboard,
-  TbFileInvoice,
-  TbChartPie,
-} from "react-icons/tb";
-import {
-  MdOutlineAttachMoney,
-  MdOutlineInventory,
-  MdSupportAgent,
-  MdOutlinePayments,
-  MdOutlineSavings,
-} from "react-icons/md";
-import { AiOutlineAudit } from "react-icons/ai";
+import { TbLayoutDashboard } from "react-icons/tb";
+import { MdOutlinePayments } from "react-icons/md";
 import { FiUsers } from "react-icons/fi";
 import { LiaMoneyBillWaveSolid } from "react-icons/lia";
-import { HiOutlineMail } from "react-icons/hi";
 
 export const primaryNavItems = [
   {

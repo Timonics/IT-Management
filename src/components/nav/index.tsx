@@ -9,8 +9,6 @@ import {
   TbLogout,
   TbUser,
 } from "react-icons/tb";
-import Image from "next/image";
-import logo from "@/assets/image.png";
 import { useRouter } from "next/navigation";
 
 const Nav = () => {
