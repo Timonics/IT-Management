@@ -1,7 +1,6 @@
 "use client";
 
 import useAuthStore from "@/stores/authStore";
-import Link from "next/link";
 import React from "react";
 
 const Login = () => {
@@ -19,7 +18,7 @@ const Login = () => {
         <div className="space-y-1">
           <p className="text-xs ml-3 opensans font-medium">Email</p>
           <input
-            className="border border-[#888884] urban p-2 rounded-lg w-full text-xs pl-4"
+            className="border outline-[#2576eec9] border-[#888884] urban p-2 rounded-lg w-full text-xs pl-4"
             type="email"
             placeholder="Email Address"
           />
@@ -27,13 +26,13 @@ const Login = () => {
         <div className="space-y-1">
           <p className="text-xs ml-3 opensans font-medium">Password</p>
           <input
-            className="border active:border-[#f8d752c9] outline-none border-[#888884] urban p-2 rounded-lg w-full text-xs pl-4"
+            className="border outline-[#2576eec9] border-[#888884] urban p-2 rounded-lg w-full text-xs pl-4"
             type="password"
             placeholder="Password"
           />
         </div>
         <button
-          className="urban w-full p-3 rounded-lg mt-4 bg-black text-white hover:bg-[#97cff5c9] hover:text-black hover:font-bold transition-all ease-in-out text-sm cursor-pointer"
+          className="urban w-full p-3 rounded-lg mt-4 bg-black font-bold text-[#97cff5c9] hover:bg-[#97cff5c9] hover:text-black hover:font-bold transition-all ease-in-out text-sm cursor-pointer"
           onClick={() => setIsAuthenticated(true)}
         >
           Sign in
@@ -46,12 +45,15 @@ const Login = () => {
             Google
           </button>
         </div> */}
-        <p className="text-center mt-4 opensans text-xs">
+        {/* <p className="text-center mt-4 opensans text-xs">
           {`Don't`} have an account?{" "}
-          <Link href={"signup"} className="font-medium urban underline underline-offset-2 text-base cursor-pointer">
+          <Link
+            href={"signup"}
+            className="font-medium urban underline underline-offset-2 text-base cursor-pointer"
+          >
             Sign Up
           </Link>
-        </p>
+        </p> */}
       </div>
     </section>
   );

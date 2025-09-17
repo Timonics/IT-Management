@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import useAuthStore from "@/stores/authStore";
 import { usePathname, useRouter } from "next/navigation";
@@ -9,23 +9,23 @@ const ProtectedRoutes = ({ children }: { children: React.ReactNode }) => {
 
   const pathName = usePathname();
   const router = useRouter();
-  
-  const authRoutes = ["/login", "/signup"];
-  const protectedRoutes = ["/", "/dashboard"];
+
+  const authRoutes = ["/", "/login"];
+  const protectedRoutes = ["/dashboard"];
 
   useEffect(() => {
     const isPublic = authRoutes.includes(pathName);
     const isProtected = protectedRoutes.includes(pathName);
 
     if (isPublic && isAuthenticated) {
-      router.replace("/");
+      router.replace("/dashboard");
     }
     if (isProtected && !isAuthenticated) {
-      router.replace("/login");
+      router.replace("/");
     }
   }, [pathName, isAuthenticated, router]);
 
-  return <div>{children}</div>;
+  return <>{children}</>;
 };
 
 export default ProtectedRoutes;

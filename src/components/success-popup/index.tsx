@@ -15,7 +15,7 @@ const SuccessPopup = () => {
   return (
     <div className="absolute inset-0 backdrop-blur-xs bg-black/10 rounded-xl flex items-center justify-center">
       <div className="urban flex flex-col border py-8 px-6 rounded-lg shadow-xl bg-black text-white items-center gap-1">
-        <h2 className="text-3xl">Welcome, Oderinde Michael</h2>
+        <h2 className="text-3xl">Welcome, <span className="transition scale-105 ease-in font-bold">Oderinde Michael</span></h2>
         <p className="outfit">
           You have successfully completed your registration process
         </p>

@@ -28,116 +28,108 @@ export const primaryNavItems = [
 
 export const secondaryNavItems = [
   {
-    name: "Members",
-    link: "/members",
+    name: "Tasks",
+    link: "/tasks",
     icon: FiUsers,
     sub_members: [
       {
-        name: "View Members",
-        link: "/members",
+        name: "View Tasks",
+        link: "/tasks",
       },
       {
-        name: "Members Requests",
-        link: "/members/pending_requests",
+        name: "Task Requests",
+        link: "/tasks/task_requests",
       },
     ],
   },
   {
-    name: "Loans",
-    link: "/loans",
+    name: "Meeting Feedbacks",
+    link: "/meeting-feedbacks",
     icon: LiaMoneyBillWaveSolid,
     sub_members: [
       {
-        name: "All Loans",
-        link: "/loans",
+        name: "All Feedbacks",
+        link: "/meeting-feedbacks",
       },
       {
-        name: "Pending Loans",
-        link: "/loans/pending_loans",
-      },
-      {
-        name: "Active Loans",
-        link: "/loans/active_loans",
-      },
-      {
-        name: "Rejected Loans",
-        link: "/loans/rejected_loans",
+        name: "Pending Feedbacks",
+        link: "/meeting-feedbacks/feedback",
       },
     ],
   },
   {
-    name: "Repayment",
-    link: "/loan_payments",
+    name: "Announcements",
+    link: "/announcements",
     icon: MdOutlinePayments,
   },
-  {
-    name: "Accounts",
-    link: "/accounts",
-    icon: MdOutlineSavings,
-    sub_members: [
-      {
-        name: "All Accounts",
-        link: "/accounts",
-      },
-      {
-        name: "Account Types",
-        link: "/accounts/savings_products",
-      },
-    ],
-  },
-  {
-    name: "Deposit",
-    link: "/shares",
-    icon: TbCoins,
-  },
-  {
-    name: "Commodity",
-    link: "/commodity",
-    icon: MdOutlineInventory,
-  },
-  {
-    name: "Mortgage",
-    link: "/mortgage",
-    icon: TbBuildingBank,
-  },
-  {
-    name: "Income",
-    link: "/income",
-    icon: MdOutlineAttachMoney,
-  },
-  {
-    name: "Expenses",
-    link: "/expenses",
-    icon: TbFileInvoice,
-  },
-  {
-    name: "Assets",
-    link: "/assests",
-    icon: TbFileAnalytics,
-  },
-  {
-    name: "Accounting",
-    link: "/accounting",
-    icon: TbChartPie,
-  },
-  {
-    name: "SMS",
-    link: "/sms",
-    icon: HiOutlineMail,
-  },
-  {
-    name: "Group Email",
-    link: "/group-email",
-    icon: HiOutlineMail,
-  },
-  {
-    name: "Support",
-    link: "/support",
-    icon: MdSupportAgent,
-  },
-  {
-    name: "Audit Log",
-    link: "/audit-log",
-    icon: AiOutlineAudit,
-  },
+  // {
+  //   name: "Accounts",
+  //   link: "/accounts",
+  //   icon: MdOutlineSavings,
+  //   sub_members: [
+  //     {
+  //       name: "All Accounts",
+  //       link: "/accounts",
+  //     },
+  //     {
+  //       name: "Account Types",
+  //       link: "/accounts/savings_products",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Deposit",
+  //   link: "/shares",
+  //   icon: TbCoins,
+  // },
+  // {
+  //   name: "Commodity",
+  //   link: "/commodity",
+  //   icon: MdOutlineInventory,
+  // },
+  // {
+  //   name: "Mortgage",
+  //   link: "/mortgage",
+  //   icon: TbBuildingBank,
+  // },
+  // {
+  //   name: "Income",
+  //   link: "/income",
+  //   icon: MdOutlineAttachMoney,
+  // },
+  // {
+  //   name: "Expenses",
+  //   link: "/expenses",
+  //   icon: TbFileInvoice,
+  // },
+  // {
+  //   name: "Assets",
+  //   link: "/assests",
+  //   icon: TbFileAnalytics,
+  // },
+  // {
+  //   name: "Accounting",
+  //   link: "/accounting",
+  //   icon: TbChartPie,
+  // },
+  // {
+  //   name: "SMS",
+  //   link: "/sms",
+  //   icon: HiOutlineMail,
+  // },
+  // {
+  //   name: "Group Email",
+  //   link: "/group-email",
+  //   icon: HiOutlineMail,
+  // },
+  // {
+  //   name: "Support",
+  //   link: "/support",
+  //   icon: MdSupportAgent,
+  // },
+  // {
+  //   name: "Audit Log",
+  //   link: "/audit-log",
+  //   icon: AiOutlineAudit,
+  // },
 ];

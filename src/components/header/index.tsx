@@ -1,39 +1,34 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import React from "react";
-import ThemeToggle from "../themeToggle";
-import { TbNotification, TbSettings, TbUser } from "react-icons/tb";
+import { MenuSquare } from "lucide-react";
+// import { useRouter } from "next/router";
+import React, { useState } from "react";
+import Nav from "../nav";
 
-const Header = () => {
-  const pathName = usePathname();
+const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  //   const router = useRouter();
 
-  const pathArr = pathName.split("/");
-  const headerName = pathArr[1];
+  //   const currentPathname = router.pathname;
 
-  const headerNameArr = headerName.includes("_") ? headerName.replace("_", " ").split("") : headerName.split("");
-  
-  const headerNametoFirstCaps = headerNameArr[0].toUpperCase();
-  headerNameArr.shift();
-
-  const newheaderNameArr = [headerNametoFirstCaps, ...headerNameArr];
-  const newHeaderName = newheaderNameArr.join("");
+  //   console.log(currentPathname);
 
   return (
-    <div className="flex items-center justify-between p-4 mb-2">
-      <h2 className="urban text-5xl">{newHeaderName}</h2>
-      <div className="flex items-center gap-2">
-        <div className="p-3 rounded-full bg-[#fff]/70">
-          <TbUser size={15} />
-        </div>
-        <div className="flex items-center bg-black/80 font-semibold text-white/70 p-3 rounded-full text-xs urban gap-2">
-          <TbSettings size={15} color="" /> Settings
-        </div>
-        <div className="p-3 rounded-full bg-[#fff]/70">
-          <TbNotification size={15} />
-        </div>
-        <ThemeToggle />
+    <div className="py-2 md:py-4 px-2 flex items-center justify-between">
+      <MenuSquare className="md:hidden" onClick={() => setIsOpen(true)} />
+      <h1 className="urban text-3xl md:text-5xl font-semibold">Dashboard</h1>
+      <div className="flex items-center gap-4 mr-2">
+        <div className="md:size-12 size-10 bg-black/5 rounded-full" />
       </div>
+
+      {isOpen && (
+        <div
+          className="fixed bg-black/50 top-0 w-full h-full"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {isOpen && <Nav />}
     </div>
   );
 };

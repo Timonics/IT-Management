@@ -1,5 +1,5 @@
 {
-  "name": "josbiz cooperatitve",
+  "name": "it-management",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,10 +11,17 @@
   "dependencies": {
     "@nivo/bar": "^0.95.0",
     "@nivo/line": "^0.95.0",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-progress": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.542.0",
     "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.1",
     "zustand": "^5.0.4"
   },
   "devDependencies": {
@@ -26,6 +33,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
     "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.8",
     "typescript": "^5"
   }
 }
