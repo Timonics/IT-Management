@@ -97,7 +97,7 @@ export default function HomePage() {
             {/* Main headline */}
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold text-sky-600 dark:text-sky-300 font-[family-name:var(--font-outfit)] text-balance">
-                Streamlining Our IT Unit's Workflows
+                Streamlining Our IT Units Workflows
               </h2>
               <p className="text-lg text-gray-500 dark:text-gray-300 opensans leading-relaxed text-pretty max-w-lg mx-auto">
                 Automating paperwork, sharing feedback, and managing tasks with
